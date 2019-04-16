@@ -27,7 +27,3 @@ You will need to also run the API locally. To do that:
 You'll want to proxy this Ember app to the locally running API with the command:
 * `ember server --proxy http://localhost:3000`
 * Visit the app at [http://localhost:4200](http://localhost:4200).
-
-## Cart & Local Storage
-
-Currently adding an item to your cart saves it into local storage, and there's no removal option. You'll need to open your dev tools and clear your local storage to empty your cart. In Chrome, this is under the Application tab.
