@@ -12,7 +12,7 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](http://ember-cli.com/)
 
 You will need to also run the API locally. To do that: 
-1) Clone down [the API](https://github.com/ahetrick22/bookstore-api) locally and in the project directory run `bundle install`.
+1) Clone down [the API](https://github.com/ahetrick22/bookstore-api) locally and in the project directory run `bundle install`, `rails db:migrate`, & `rails db:seed`.
 2) In a terminal, run `rails server --binding 0.0.0.0`.
 
 ## Installation
