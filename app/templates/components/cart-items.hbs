@@ -1,0 +1,7 @@
+<ul>
+{{#each this.fullCart.cart as |bookInCart|}}
+  <li>{{bookInCart.title}} by {{bookInCart.author}}...<strong>Price: </strong>${{format-currency bookInCart.price}}</li>
+{{/each}}
+</ul>
+
+<strong>Total Cost: ${{format-currency this.fullCart.total }}</strong>

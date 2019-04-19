@@ -1,9 +1,3 @@
 <h3>Your Cart</h3>
-<ul>
-{{#each model.cart as |bookInCart|}}
-  <li>{{bookInCart.title}} by {{bookInCart.author}}...<strong>Price: </strong>${{format-currency bookInCart.price}}</li>
-{{/each}}
-</ul>
-
-<strong>Total Cost: ${{format-currency model.total }}</strong>
+{{cart-items}}
 {{cart-clear}}
