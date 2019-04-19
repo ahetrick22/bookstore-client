@@ -1,6 +1,10 @@
 import Ember from 'ember';
+import { inject as service } from '@ember/service';
+
 
 export default Ember.Component.extend({
+
+  cart: service(),
 
   actions: {
 
@@ -15,7 +19,13 @@ export default Ember.Component.extend({
     close() {
       this.set('isShowingModal', false);
       this.get('blurBackground')(false);
-    }
+    },
+
+    addToCart(title, author, price) {
+      this.cart.addToCart(title, author, price);
+      this.set('isShowingModal', false);
+      this.get('blurBackground')(false);
+    } 
 
   }
 
